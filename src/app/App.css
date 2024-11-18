@@ -1,0 +1,68 @@
+/* Media Queries */
+@media only screen and (max-width: 991px) {
+    .s_c {
+        padding-top: 50px; /* Increased padding for better spacing on smaller screens */
+    }
+}
+
+/* Page Transition Animations */
+.page-enter {
+    transform: translateY(120%);
+    opacity: 0;
+}
+
+.page-enter-active {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.page-exit {
+    transform: translateY(0%);
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.page-exit-active {
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+/* Container Sizes */
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1400px; /* Increased max-width for larger screens */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Example Enhancements */
+.page-enter {
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.page-exit-active {
+    transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+/* Additional Styles */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 991px) {
+    .s_c {
+        padding-top: 50px;
+    }
+}

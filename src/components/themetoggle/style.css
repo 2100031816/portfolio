@@ -1,0 +1,32 @@
+.theme_toggler {
+    background: var(--primary-color);
+    z-index: 999999999;
+    left: 10px;
+    top: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.theme_toggler:hover {
+    background: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.theme_toggler svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: var(--text-color);
+    transition: fill 0.3s ease;
+}
+
+.theme_toggler:hover svg {
+    fill: #fff;
+}
